@@ -1,0 +1,231 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Aptos Display";}
+@font-face
+	{font-family:Aptos;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Aptos",sans-serif;}
+h1
+	{mso-style-link:"Título 1 Car";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Título 2 Car";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;
+	font-weight:normal;}
+span.Ttulo1Car
+	{mso-style-name:"Título 1 Car";
+	mso-style-link:"Título 1";
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+span.Ttulo2Car
+	{mso-style-name:"Título 2 Car";
+	mso-style-link:"Título 2";
+	font-family:"Aptos Display",sans-serif;
+	color:#0F4761;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=ES-CO style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<h1>Funcionamiento del prototipo</h1>
+
+<p class=MsoNormal>En este apartado logra explicarse como funciona desde el
+inicio hasta el final el prototipo para su uso del personal.</p>
+
+<h2>Componentes del prototipo</h2>
+
+<p class=MsoNormal>El <span style='line-height:107%'>prototipo está compuesto
+principalmente por los siguientes elementos:</span></p>
+
+<p class=MsoNormal><span style='line-height:107%'>1. Sensor SPS30, el cual se
+comunica con Raspberry Pi a través del protocolo de comunicación serial UART y
+el envio de la información a través de los puertos TX y RX, con una fuente de
+voltaje de 5 V. </span></p>
+
+<p class=MsoNormal><span style='line-height:107%'>2. Tarjeta Raspberry Pi, es
+el cerebro del prototipo la cual conlleva a la integración del sensor,
+programación del sensor en lenguaje Python, creación de la base de datos, la
+creación de la página web y visualización de los datos. </span></p>
+
+<p class=MsoNormal><span style='line-height:107%'>3. Base de datos MySQL,
+corresponde a la estructuración y seguridad de los datos recolectados haciendo
+uso de la base de datos relacional. </span></p>
+
+<p class=MsoNormal><span style='line-height:107%'>4. Código en PHP, HTML y Java
+Script, para la visualización de la información en la página web.</span></p>
+
+<p class=MsoNormal><span style='line-height:107%'>5. Tecnologías IoT,
+utilizadas en aspectos de la visualización de los datos en tiempo real y la
+verificación y gestión remota de los datos.</span></p>
+
+<p class=MsoNormal><span style='line-height:107%'>6. Lenguaje de programación como
+Python para la visualización de los datos y programación del sensor. </span></p>
+
+<h2>Criterios de instalación: Manual de Operación de Sistemas de Vigilancia de
+la Calidad del Aire (SVCA)</h2>
+
+<p class=MsoNormal>Los criterios de instalación estan definidos en la
+Resolución 601 de 2006 del Ministerio de Ambiente (MINAMBIENTE) en los manuales
+de Protocolo de Operación de los SVCA por lo cual se monta el prototipo sobre
+la base metálica ubicada a 2 metros de altura.</p>
+
+<p class=MsoNormal>Para cumplir con este requisito, se diseñó una estructura
+con estas medidas, tal como se observa en la siguiente figura.</p>
+
+<p class=MsoNormal><img width=62 height=192 id="Imagen 3"
+src="Funcionamiento_archivos/image001.jpg"
+alt="Forma, Flecha&#10;&#10;Descripción generada automáticamente"></p>
+
+<h2>Ubicación optima de instalación del sensor SPS30</h2>
+
+<p class=MsoNormal><span style='line-height:107%'>La ubicación óptima del
+sensor se elige de acuerdo con la ficha técnica y la revisión de su
+documentación, como la más adecuada para el monitoreo tal como se ilustra en la
+siguiente figura:</span></p>
+
+<p class=MsoNormal><img width=170 height=103 id="Imagen 10"
+src="Funcionamiento_archivos/image002.jpg"
+alt="Interfaz de usuario gráfica, Diagrama, Aplicación&#10;&#10;Descripción generada automáticamente"><img
+width=184 height=103 id="Imagen 11" src="Funcionamiento_archivos/image003.jpg"
+alt="Interfaz de usuario gráfica, Aplicación&#10;&#10;Descripción generada automáticamente"><img
+width=122 height=103 id="Picture 2" src="Funcionamiento_archivos/image004.png"></p>
+
+<h2> Programación y control </h2>
+
+<p class=MsoNormal>Para dar inicio al funcionamiento del prototipo, una vez
+instalado, se debe realizar la conexión a través de VNC Viewer a través de la
+IP pública:</p>
+
+<p class=MsoNormal><img width=339 height=243
+src="Funcionamiento_archivos/image005.png"
+alt="Interfaz de usuario gráfica, Aplicación, PowerPoint&#10;&#10;Descripción generada automáticamente"></p>
+
+<p class=MsoNormal>Dentro de la Raspberry Pi 4, ejecutamos el archivo Python
+prueba5.py, para ello abrimos la terminal y ejecutamos los siguientes comandos:</p>
+
+<p class=MsoNormal><span style='font-family:"Courier New"'>Sudo su pigpiod</span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New"'>Sudo Python
+prueba5.py</span></p>
+
+<p class=MsoNormal><span style='font-family:"Aptos Display",sans-serif'>De tal
+forma que el programa inicia con el monitoreo. Corroboramos su funcionamiento:</span></p>
+
+<p class=MsoNormal><span style='font-family:"Aptos Display",sans-serif'><img
+width=304 height=286 src="Funcionamiento_archivos/image006.png"></span></p>
+
+<h2>Base de datos MSQL</h2>
+
+<p class=MsoNormal>Por otra parte, corroboramos que las mediciones se estén
+guardando en la base de datos “aire” de forma que ingresamos a una nueva
+terminal y digitamos:</p>
+
+<p class=MsoNormal><span style='font-family:"Courier New"'>Sudo su</span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New"'>mysql -u root;</span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New"'>use aire;</span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New"'>select * from variables;</span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New"'><img width=406
+height=206 src="Funcionamiento_archivos/image007.png"></span></p>
+
+<p class=MsoNormal><span style='font-family:"Aptos Display",sans-serif'>Verificamos
+su almacenamiento:</span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New"'><img width=373
+height=253 src="Funcionamiento_archivos/image008.png"
+alt="Interfaz de usuario gráfica, Texto&#10;&#10;Descripción generada automáticamente"></span></p>
+
+<p class=MsoNormal><span style='font-family:"Aptos Display",sans-serif'>Posteriormente
+estos datos podemos exportarlos a un archivo .CSV para analizar
+estadísticamente los datos. </span></p>
+
+<h2>Página web: plataforma de monitoreo y mapa de la ciudad de Pasto</h2>
+
+<p class=MsoNormal>A continuación, podemos ingresar a la página web con el End
+Point http:192.168.X.X/grafica.php. (Ip publica).</p>
+
+<p class=MsoNormal>Dentro de ella podemos verificar las concentraciones en
+tiempo real tanto de PM2,5 como de PM10, las cuales se verán representadas en
+gráficas.</p>
+
+<p class=MsoNormal><img width=534 height=246
+src="Funcionamiento_archivos/image009.png"></p>
+
+<p class=MsoNormal>Luego, podemos ver el comportamiento de las dos variables en
+las últimas 24 horas.</p>
+
+<p class=MsoNormal><img width=531 height=222
+src="Funcionamiento_archivos/image010.png"
+alt="Interfaz de usuario gráfica, Aplicación&#10;&#10;Descripción generada automáticamente"></p>
+
+<p class=MsoNormal>Y finalmente en la parte inferior se muestra el índice de
+calidad del aire para estos dos contaminantes.</p>
+
+<p class=MsoNormal><img width=528 height=292 id="Imagen 1"
+src="Funcionamiento_archivos/image011.png"
+alt="Interfaz de usuario gráfica, Aplicación&#10;&#10;Descripción generada automáticamente"></p>
+
+<p class=MsoNormal>De esta forma podemos concluir que el desarrollo del
+prototipo determina la calidad del aire según la ubicación del sistema en
+periodos 24/7 siguiendo protocolos de instalación. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
